@@ -664,6 +664,10 @@
                     font-weight: bold;
                     color: black;
                 }
+                #main-shopping-grid {
+                    display: grid;
+                    
+                }
                 #main-newstand-gray {
                     display: flex;
                     justify-content: flex-start;
@@ -867,6 +871,13 @@
                 .left-section footer .total {
                     color: rgba(96,96,96,.5);
                 }
+                #main-shopping-grid {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-rows: 1fr 1fr 1fr;
+
+                }
+                #main-shopping-grid > div
             </style>
             <main id = "main">
                 <div id="main-left">
@@ -921,6 +932,20 @@
                                 <div>언론사</div>
                                 </div>
                                 <div id="main-shopping-grid">
+                            </div>
+                            <div>
+                                <div id="main-shopping-grid">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                    <div>6</div>
+                                    <div>7</div>
+                                    <div>8</div>
+                                    <div>9</div>
+                                    <div>10</div>
+                                    <div>11</div>
                             </div>
                             <footer>
                                 <button class="prev"><span class="blind">이전 페이지</span></button>
