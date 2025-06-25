@@ -80,24 +80,38 @@
             text-align: center; 
         }
         #wrap-center {
-            width: 1280px;
+            width: 900px;
             display: inline-block;
             background-color: yellow;
         }
         #header {
             text-align: left;
+            position: relative;
         }
         #header-hamburger {
-            margin-top: 18px;
+            position: absolute;
+            top: 5px;
+            left: -12px;
             padding: 16px;
             display: inline-block;
             background: none;
             border: none;
             cursor: pointer;
         }
-        #header-hamburger:hover {
+        #header-hamburger:hover::before {
+            position: absolute;
+            content: '';
             background-color: var(--color_option_bg);
+            right: 5px;
+            left: 5px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
+        }
+        #header-hamburger:hover > div {
+            position: relative;
+            left: 1px;
+            top: 1px;
         }
         #header-hamburger > div {
             background-image: url(./sp_main.png);
@@ -108,7 +122,7 @@
             background-repeat: no-repeat;
         }
         #main {
-            height: 5000px;
+            height: 3000px;
         }
     </style>
 </head>
