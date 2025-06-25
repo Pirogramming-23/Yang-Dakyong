@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <style>
+    body {
+        margin: 0;
+        background-color: #0d1117;
+        color: white;
+    }
+
+    .top-menu {
+        background-color: #0d1117;
+        padding: 16px;
+        display: flex;
+        gap: 20px;
+        font-size: 15px;
+        border-bottom: 1px solid #30363d;
+        padding-left: 40px;
+    }
+
+    .top-menu span {
+        color: #c9d1d9;
+        cursor: pointer;
+    }
+
+    .main-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px 120px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .left p {
+        color: #c9d1d9;
+        font-size: 16px;
+    }
+
+    .right {
+        flex: 1;
+        background-color: #161b22;
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        background-color: #0d1117;
+        border: 1px solid #30363d;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .note {
+        font-size: 12px;
+        color: #8b949e;
+        margin-bottom: 16px;
+    }
+
+    button {
+        background-color: #2ea44f;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .footer {
+        background-color: white;
+        height: 100px;
+    }
+
+    .cat-img {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        width: 200px;
+        pointer-events: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+    <span>Why GitHub?</span>
+    <span>Team</span>
+    <span>Enterprise</span>
+    <span>Explore</span>
+    <span>Marketplace</span>
+    <span>Pricing</span>
+    </div>
+
+
+    <div class="main-content">
+    <div class="left">
+        <h1>Built for developers</h1>
+        <p>
+        GitHub is a development platform inspired by the way you work.  
+        From open source to business, you can host and review code,  
+        manage projects, and build software alongside 50 million developers.
+        </p>
+    </div>
+
+    <div class="right">
+        <form>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" />
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" />
+        </div>
+
+        <p class="note">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+
+        <button type="submit">Sign up for GitHub</button>
+        </form>
+    </div>
+    </div>
+    <img src="./gitcat.jpg" alt="GitHub mascot" class="cat-img" />
+
+    <div class="footer"></div>
+
+</body>
+</html>
